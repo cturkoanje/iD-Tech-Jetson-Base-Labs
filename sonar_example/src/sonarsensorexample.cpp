@@ -9,9 +9,10 @@ class SonarSensorExample
   private:
     ros::NodeHandle nh;
     ros::Subscriber sonar_sub;
+    void sonarCallback(const std_msgs::Int16::ConstPtr& msg);
 };
 
-SonarSensorExample::RangeSensorExample()
+SonarSensorExample::SonarSensorExample()
 {
   // method constructor
 }

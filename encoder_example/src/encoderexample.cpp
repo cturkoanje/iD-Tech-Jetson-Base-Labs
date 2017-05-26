@@ -9,6 +9,8 @@ class MotorEncoderExample
   private:
     ros::NodeHandle nh;
     ros::Subscriber sonar_sub;
+    void leftEncoderCallback(const std_msgs::Int16::ConstPtr& msg);
+    void rightEncoderCallback(const std_msgs::Int16::ConstPtr& msg);
 };
 
 MotorEncoderExample::MotorEncoderExample()
